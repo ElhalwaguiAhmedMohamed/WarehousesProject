@@ -14,11 +14,13 @@ namespace WarehousesProject.Services
         {
             ObservableCollection<Warhouse> wareHouses = new ObservableCollection<Warhouse>();
             Model1 model = new Model1();
+     
             foreach(Warhouse warehouse in model.Warhouses)
             {
                 wareHouses.Add(warehouse);
             }
             return wareHouses;
+           
         }
 
         public static void addWarehouse(Warhouse _warhouse)
